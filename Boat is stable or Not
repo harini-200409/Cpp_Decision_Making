@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int w,a,c;
+    cin>>w>>a>>c;
+    int wac;
+    wac=a*75+c*50;
+    if(w>=wac)
+    cout<<"Boat is stable";
+    else
+    cout<<"Boat will drown";
+    return 0;
+}
