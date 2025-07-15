@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int m,y;
+    cin>>m>>y;
+    int lp;
+    if(y%4==0)
+    {
+        lp=29;
+    }
+    int choice,l1;
+    if(m==1||m==3||m==5||m==7||m==8||m==10||m==12)
+    {
+        choice=1;
+        goto l1;
+    }
+    else if(m==2)
+    {
+        if(lp==29)
+        choice=2;
+        else
+        choice=3;
+        goto l1;
+    }
+    else if(m==4||m==6||m==9||m==11)
+    {
+        choice=4;
+        goto l1;
+    }
+    l1:
+    switch(choice)
+    {
+        case 1:
+        cout<<"Number of days is 31";
+        break;
+        case 2:
+        cout<<"Number of days is 29";
+        break;
+        case 3:
+        cout<<"Number of days is 28";
+        break;
+        case 4:
+        cout<<"Number of days is 30";
+        break;
+        case 5:
+        cout<<"Invalid Input";
+        break;
+    }
+    return 0;
+}
