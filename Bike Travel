@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,s;
+    cin>>a>>b>>c>>s;
+    float ta,tb,tc;
+    ta=(float)a/s;
+    tb=(float)b/s;
+    tc=(float)c/s;
+    if(ta<=tb&&ta<=tc)
+    cout<<"Bike A";
+    else if(tb<=ta&&tb<=tc)
+    cout<<"Bike B";
+    else
+    cout<<"Bike C";
+    return 0;
+}
